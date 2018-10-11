@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neroarch</title>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+<h1>A simple application to book a ride- Eber :P</h1>
+<div id="address"></div>
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Function</th>
+      <th>Argument(s)</th>
+      <th>Output</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="#" onclick="set_cust()" class="btn btn-primary">set customer</a></td>
+      <td id="arguments_setcust"><input placeholder="address" type="text" id="argument_setcust_address"/></td>
+      <td id="output_setcust"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="set_drv()" class="btn btn-primary">set driver</a></td>
+      <td id="arguments_setdrv"><input placeholder="address" type="text" id="argument_setdrv_address"/></td>
+      <td id="output_setdrv"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="set_arb()" class="btn btn-primary">set arbiter</a></td>
+      <td id="arguments_setarb"><input placeholder="address" type="text" id="argument_setarb_address"/></td>
+      <td id="output_setarb"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="customer()" class="btn btn-primary">customer</a></td>
+      <td id="arguments_customer"/>
+      <td id="output_customer"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="arbiter()" class="btn btn-primary">arbiter</a></td>
+      <td id="arguments_arbiter"/>
+      <td id="output_arbiter"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="driver()" class="btn btn-primary">driver</a></td>
+      <td id="arguments_driver"/>
+      <td id="output_driver"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="add_balance()" class="btn btn-primary">addBalance</a></td>
+      <td id="arguments_add_balance">
+        <input type="text" placeholder="amount" id="argument_add_balance_amount"/>
+        <input type="text" placeholder="entity" id="argument_add_balance_entity"/>
+      </td>
+      <td id="output_add_balance"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="book_cab()" class="btn btn-primary">Book cab</a></td>
+      <td id="arguments_book_cab">
+		  <input type="text" placeholder="source" id="argument_book_cab_source"/>
+	      <input type="text" placeholder="destination" id="argument_book_cab_destination"/>
+		  <input type="text" placeholder="amount" id="argument_book_cab_amount"/>
+	  </td>
+      <td id="output_book_cab"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="assign_driver()" class="btn btn-primary">assignDriver</a></td>
+      <td id="arguments_assign_driver"/>
+      <td id="output_assign_driver"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="start_ride()" class="btn btn-primary">Start Ride</a></td>
+      <td id="arguments_start_ride"/>
+      <td id="output_start_ride"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="complete_transaction()" class="btn btn-primary">Complete ride</a></td>
+	  <td id="arguments_complete_transaction"/>
+      <td id="output_complete_transaction"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="cancleRide_Driver()" class="btn btn-primary">Driver cancles ride</a></td>
+	  <td id="arguments_cancleRide_Driver"/>
+      <td id="output_cancleRide_Driver"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="cancleRide_Customer()" class="btn btn-primary">Customer cancles ride</a></td>
+	  <td id="arguments_cancleRide_Customer"/>
+      <td id="output_cancleRide_Customer"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="balances()" class="btn btn-primary">balances</a></td>
+      <td id="arguments_balances"><input placeholder="address" type="text" id="argument_balances_address"/></td>
+      <td id="output_balances"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="current_state()" class="btn btn-primary">currentState</a></td>
+      <td id="arguments_current_state"/>
+      <td id="output_current_state"/>
+    </tr>
+    <tr>
+      <td><a href="#" onclick="reset_state()" class="btn btn-primary">resetState</a></td>
+      <td id="arguments_reset_state"/>
+      <td id="output_reset_state"/>
+    </tr>
+    </tbody>
+  </table>
+  <!--<div id="msg"></div>-->
+</div>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
